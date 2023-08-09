@@ -69,7 +69,7 @@ html, css & JavaScript.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- **Use this link to visit my capstone Project 1:**
+- **Use this <a href="https://johntefresh.github.io/The-Grand-Prix/">link</a> to visit my capstone Project 1.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -114,7 +114,7 @@ run the linter commands:https://github.com/microverseinc/linters-config/tree/mas
 
 ### Deployment
 
-You can deploy this project here:
+You can deploy this project <a href="https://github.com/JohnteFresh/The-Grand-Prix.git">here</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
