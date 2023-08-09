@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: lato, sans-serif, arial;
+}
+
+:root {
+  --white: #fff;
+  --capstone-grey: #272a31;
+  --soft-orange: #ec5242;
+  --light-grey: #d3d3d3;
+  --black: #0e0000;
+  --m1-red: #e00700;
+  --dark-grey: #4b4d4c;
+  --hard-white: #fff7f7;
+}
+
+footer > img {
+  width: 30vw;
+  height: auto;
+  max-height: 80px;
+}
+
+.toolbar {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.sponsor-list a {
+  color: #d3d3d3;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.intro a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.send-email a {
+  font-size: 16px;
+  color: #383838;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  background-color: #262626;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-item {
+  margin: 16px 0;
+  padding: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.logo {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+#about {
+  color: #383838;
+  text-align: center;
+}
+
+#moto-home {
+  color: #383838;
+  padding: 105px 20px 85px 20px;
+  margin-top: -75px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-image: url(icons/landing.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#moto-home .about-center {
+  padding: 105px 30px 35px;
+  background-color: #f5f5f5;
+}
+
+.about-center h1 {
+  color: #ec5242;
+  mix-blend-mode: unset;
+  margin-top: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.about-center .about-program {
+  padding: 20px 10px;
+  background-color: #fffffff5;
+  border: 3px #fff solid;
+  margin-top: 40px;
+  line-height: 1.8em;
+  font-size: 15px;
+}
+
+.about-center .send-email {
+  margin-top: 30px;
+  line-height: 1.8em;
+}
+
+.vid-1 a,
+.vid-2 a,
+.vid-3 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #ec5242;
+}
+
+.intro {
+  margin-top: 1rem;
+  width: 100%;
+  height: 85vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro h2 {
+  font-family: lato, sans-serif, arial;
+  color: var(--soft-orange);
+}
+
+.intro h1 {
+  font-size: 2.75rem;
+  color: var(--soft-orange);
+  font-weight: 700;
+}
+
+.intro q {
+  color: var(--soft-orange);
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.intro p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  width: 80%;
+  align-items: center;
+  background-color: var(--hard-white);
+  font-family: lato, sans-serif, arial;
+  line-height: 1.5rem;
+  font-weight: 600;
+  border: 1px solid var(--m1-red);
+}
+
+.intro a:active {
+  color: var(--m1-red);
+  text-decoration: underline;
+  transition: 0.8s;
+}
+
+.past-races hr {
+  width: 5%;
+  border: 1px solid var(--m1-red);
+  margin-top: 10px;
+}
+
+.event {
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.event h2 {
+  font-family: lato, 'Times New Roman', Times, serif;
+}
+
+.event hr {
+  width: 10%;
+  font-weight: 400;
+  margin-top: 10px;
+  border: 1px solid var(--m1-red);
+}
+
+.event-about {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-about p {
+  font-family: Lato, sans-serif;
+  margin-top: 1rem;
+}
+
+.event hr:last-child {
+  width: 100%;
+}
+
+.about-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--light-grey);
+  font-family: Lato, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-details {
+  color: var(--dark-grey);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.about-logo img {
+  width: 30%;
+}
+
+.past-races {
+  padding-bottom: 40px;
+  position: relative;
+  line-height: 1.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+}
+
+.vid-1,
+.vid-2,
+.vid-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vid-1 {
+  height: 30vw;
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/1015919301-LAT-20180701-737288.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.vid-2 {
+  height: 30vw;
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/26523-list.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.vid-3 {
+  height: 30vw;
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/MotoGP_Hero_1920x800.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.past-races h2 {
+  font-family: lato, sans-serif;
+  margin-top: 1rem;
+}
+
+.past-races p {
+  font-family: lato, sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#sponsors {
+  background-color: var(--capstone-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+#sponsors h2 {
+  color: #d3d3d3;
+}
+
+.sponsor-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 25px;
+  row-gap: 18px;
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  align-items: center;
+  height: 140px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+footer > div {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .toolbar {
+    display: block;
+    background-color: var(--capstone-grey);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .toolbar img {
+    width: 30%;
+  }
+
+  .toolbar li select {
+    background-color: var(--capstone-grey);
+    border: none;
+    color: var(--hard-white);
+  }
+
+  .toolbar li {
+    width: 3.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .toolbar ul {
+    list-style: none;
+    color: var(--hard-white);
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 5px 5px #c2c2c2ad;
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro p {
+    width: 50%;
+  }
+
+  .intro a {
+    text-decoration: underline;
+  }
+
+  nav .campaign {
+    display: block;
+    color: #ec5242;
+    border: 3px #ec5242 solid;
+    padding: 6px;
+    text-decoration: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    flex: 1;
+  }
+
+  .desktop-nav li {
+    display: inline-block;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+  }
+
+  .page-links-1 {
+    color: #ec5242;
+  }
+
+  .logo {
+    display: block;
+    width: 100px;
+  }
+}
