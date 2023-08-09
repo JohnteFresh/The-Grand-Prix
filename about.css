@@ -51,6 +51,13 @@ h2 {
   text-decoration: none;
 }
 
+section > hr {
+  margin: auto;
+  width: 50px;
+  border: #ec5242 solid 1px;
+  margin-bottom: 23px;
+}
+
 .intro a {
   text-decoration: none;
   color: var(--black);
@@ -138,6 +145,11 @@ header {
   height: auto;
 }
 
+.past-races a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #about {
   color: #383838;
   text-align: center;
@@ -180,14 +192,6 @@ header {
 .about-center .send-email {
   margin-top: 30px;
   line-height: 1.8em;
-}
-
-.vid-1 a,
-.vid-2 a,
-.vid-3 a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .subtitle {
@@ -245,8 +249,6 @@ header {
 }
 
 .past-races hr {
-  width: 5%;
-  border: 1px solid var(--m1-red);
   margin-top: 10px;
 }
 
@@ -306,51 +308,39 @@ header {
 }
 
 .past-races {
-  padding-bottom: 40px;
   position: relative;
   line-height: 1.4rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px;
 }
 
-.videos {
+.past-races ul {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100%;
-  padding: 20px;
 }
 
-.vid-1,
-.vid-2,
-.vid-3 {
+.past-races li {
   display: flex;
-  align-items: center;
+  height: 45vw;
   justify-content: center;
-}
-
-.vid-1 {
-  height: 30vw;
+  align-items: center;
   background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/1015919301-LAT-20180701-737288.jpg);
-  background-repeat: no-repeat;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.vid-2 {
-  height: 30vw;
+.past-races li:nth-child(2) {
   background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/26523-list.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
-.vid-3 {
-  height: 30vw;
+.past-races li:nth-child(3) {
   background-image: linear-gradient(#9b1200be, #9b1200be), url(icons/media/MotoGP_Hero_1920x800.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+.past-races h3 {
+  font-size: 26px;
+  margin-top: 12px;
 }
 
 .past-races h2 {
@@ -416,6 +406,16 @@ footer > div {
     font-size: 0.85rem;
   }
 
+  #sponsors {
+    display: none;
+  }
+
+  footer img {
+    max-height: 80px;
+    height: 100%;
+    width: auto;
+  }
+
   .toolbar img {
     width: 30%;
   }
@@ -475,12 +475,13 @@ footer > div {
   .desktop-nav {
     display: flex;
     justify-content: space-around;
-    width: 40%;
-    flex: 1;
+    width: 70%;
+    padding-right: 5rem;
+    align-items: center;
   }
 
   .desktop-nav li {
-    display: inline-block;
+    list-style: none;
   }
 
   .desktop-nav a {
@@ -493,6 +494,102 @@ footer > div {
 
   .logo {
     display: block;
+    margin-left: 6rem;
     width: 100px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #moto-home {
+    margin-top: 0;
+  }
+
+  .about-logo-text p {
+    margin-right: 2rem;
+  }
+
+  #moto-home.about-center h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #moto-home.about-center h1 span {
+    font-size: 43px;
+  }
+
+  footer.about * {
+    color: #fff;
+  }
+
+  #moto-home p {
+    width: 70%;
+  }
+
+  #moto-home q {
+    font-size: 32px;
+  }
+
+  #moto-home.about-center {
+    padding-bottom: 70px;
+  }
+
+  #moto-home.about-center * {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #moto-home.about-center h1 hr {
+    width: 25px;
+    margin: 15px auto;
+    border: #ec5242 solid 1px;
+  }
+
+  .about-program {
+    width: 100%;
+  }
+
+  .event img {
+    margin: 50px auto 0;
+    width: 50%;
+  }
+
+  .event,
+  #moto-home,
+  .past-races {
+    padding-right: calc(20% - 120px);
+    padding-left: calc(20% - 120px);
+  }
+
+  .past-races ul {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .past-races li {
+    height: 17vw;
+    width: 45%;
+    font-size: 20px;
+  }
+
+  footer.about {
+    background-color: #383838;
+  }
+
+  footer {
+    height: 160px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 10%;
   }
 }

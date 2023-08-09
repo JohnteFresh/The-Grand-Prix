@@ -22,12 +22,16 @@ body {
 
 h1,
 .year {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 900;
   mix-blend-mode: color-burn;
   color: #9b1200;
   text-align: left;
   line-height: 1.1em;
+}
+
+q {
+  color: #ec5242;
 }
 
 .year {
@@ -184,14 +188,15 @@ article h3 {
 
 #moto-home {
   color: #383838;
-  padding: 105px 20px 85px 20px;
-  margin-top: -75px;
+  padding: 105px 20px 85px 150px;
+  width: 80%;
+  margin-top: -55px;
   display: flex;
   flex-direction: column;
   gap: 5px;
   background-image: url(icons/landing.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938));
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .subtitle {
@@ -504,12 +509,18 @@ footer > div {
   .desktop-nav {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 70%;
+    padding-right: 5rem;
+    align-items: center;
+  }
+
+  .desktop-nav .page-links-1 {
+    color: var(--f1-red);
   }
 
   .desktop-nav li {
     margin-left: 10px;
-    display: inline-block;
+    list-style: none;
   }
 
   .desktop-nav a {
@@ -525,6 +536,7 @@ footer > div {
 
   .navbar .logo {
     display: block;
+    margin-left: 6rem;
     width: 100px;
   }
 
@@ -582,7 +594,8 @@ footer > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
-    padding-top: 100px;
+    padding-right: calc(20% - 120px);
+    padding-left: calc(20% - 120px);
   }
 
   #program h2 {
@@ -635,6 +648,8 @@ footer > div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr 1fr 1fr;
     gap: 20px;
+    padding-right: calc(20% - 120px);
+    padding-left: calc(20% - 120px);
   }
 
   #drivers h2 {
