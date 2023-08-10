@@ -12,40 +12,44 @@
 <body>
   <header>
     <div class="toolbar">
-      <ul>
-        <li><img src="icons/toolbar/facebook.png" alt="facebook-ribbon-icon"></li>
-        <li><img src="icons/toolbar/twitter-sign.png" alt="twitter-ribbon-icon"></li>
-        <li><select name="language" id="language">
-          <option value="english">English</option>
-          <option value="swahili">Kiswahili</option>
-        </select></li>
-        <li>My Page</li>
-        <li>Login</li>
-      </ul>
+      <a href="#"><img src="icons/toolbar/facebook.png" alt="Link to Facebook"></a>
+      <a href="#"><img src="icons/toolbar/twitter-sign.png" alt="Link to Twitter"></a>
+      <select name="language" id="language">
+        <option value="english">English</option>
+        <option value="swahili">Kiswahili</option>
+        <option value="russian">Russian</option>
+      </select>
+      <a href="#">My Page</a>
+      <a href="#">Log in</a>
     </div>
 
-    <nav class="navbar">
-      <a href="index.html"><img class="logo" src="icons/MotoImg/Moto_Gp_logo.svg.png" alt="MotoGP"></a>
-      <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#drivers" class="nav-link">Riders and Teams</a></li>
-          <li class="nav-item"><a href="#races.html" class="nav-link">Races</a></li>
+    <nav id="">
+      <a class="logo" href="./index.html"><img src="./icons/MotoImg/Moto_Gp_logo.svg.png" alt="Logo and link to the homepage"></a>
+      <ul class="desktop-navigation">
+        <li><a class="about" href="./about.html">About</a></li>
+          <li><a href="#">Our Riders</a></li>
+          <li><a href="#">Races</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">News</a></li>
       </ul>
+      <a href="#" class="campaign">F1 Campaign</a>
+    </nav>
+
+    <div class="navbar">
+
       <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
 
-      <ul class="desktop-nav">
-          <li><a href="about.html" class="page-links-1">About</a></li>
-          <li><a href="#drivers" class="page-links">Our Riders</a></li>
-          <li><a href="#race-days" class="page-links">Races</a></li>
-          <li><a href="#https://www.formula1.com/en/latest.html" class="page-links">News</a></li>
-          <li><a href="https://www.formula1.com/en/latest/tags.race-calendar.2Sa4DEdBSUMcOqa8aYceEe.html" class="page-links campaign" id="campaign">F1 Campaign</a></li>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#drivers" class="nav-link">Riders and Teams</a></li>
+        <li class="nav-item"><a href="#races.html" class="nav-link">Races</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <main>
 
@@ -118,8 +122,8 @@
     </section>
   </main>
   <!-- signature -->
-  <footer class="hidden">
-      <img class="logo" src="icons/MotoImg/Fédération_Internationale_de_Motocyclisme_logo.svg.png" alt="" class="footer-desktop-img">
+  <footer class="hidden footer">
+      <img src="icons/MotoImg/Fédération_Internationale_de_Motocyclisme_logo.svg.png" alt="">
       <div>
         <p>@2023 Dorna Sports SL <br> All rights reserved <br> All trademarks are the property of their respective owners.</p>
         <p class="privacy-policy hidden">For details about how we use your information, please see our <a href="#">Privacy Policy</a></p>
